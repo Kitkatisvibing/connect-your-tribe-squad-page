@@ -4,6 +4,7 @@
 <ul>
   {% for person in persons %}
     <li><a href="/student/{{ person.id }}">{{ person.name }}</a></li>
+    <img src="{{ person.avatar }}" alt="{{ person.name }}'s avatar">
   {% endfor %}
 </ul>
 

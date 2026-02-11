@@ -57,7 +57,7 @@ app.get('/', async function (request, response) {
     'sort': 'name',
 
     // Geef aan welke data je per persoon wil terugkrijgen
-    'fields': '*,squads.*',
+    'fields': 'name,avatar,fav_tag',
 
     // Combineer meerdere filters
     'filter[squads][squad_id][tribe][name]': 'FDND Jaar 1',
